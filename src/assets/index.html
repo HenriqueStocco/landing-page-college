@@ -4,30 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/index.css">
-  <title>Landing page</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <title>Portfolio</title>
 </head>
 
 <body>
-  <header>
-    <h1>My landing page</h1>
-    <nav>
+  <header id="top" class="header-container">
+    <h1>My Portfolio</h1>
+
+    <nav class="navbar">
       <ul>
         <li><a href="#top">Top</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contacts">Portfolio</a></li>
-        <li><a href="#down">Down</a></li>
+        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#down">Footer</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="top">
-      <img src="./images/presentation.jpg" alt="presentation">
-    </section>
-
-    <section id="about">
+  <main class="main-container">
+    <section id="about" class="about-container">
       <h2>About</h2>
 
       <p>Me chamo Henrique, tenho 21 anos e atualmente trabalho como Assistente de desenvolvimento na Cesta Básica
@@ -36,48 +33,64 @@
         tornar desenvolvedor FullStack.</p>
     </section>
 
-    <section id="portfolio">
-      <h2>Portfolio</h2>
+    <section id="technologies" class="portfolio-container">
+      <h2>technologies</h2>
 
-      <div>
-        <img src="./images/githubIcon.png" height="40" width="60" alt="github">
-        <p><a href="https://github.com/HenriqueStocco">github</a></p>
-      </div>
-
-      <div>
-        <img src="" alt="">
-        <p>web site</p>
-      </div>
-
-      <div>
-        <div><img src="./images/instagramIcon.png" height="40" width="60" alt="instagram">
-          <p><a href="https://www.instagram.com/">instagra</a></p>
+      <div class="grid-container">
+        <div class="github-card grid-item">
+          <img src="./images/tsIcon.webp" height="70" width="80" alt="github">
+          <p>TypeScript</p>
         </div>
 
-        <div><img src="./images/linkedinIcon.png" height="40" width="60" alt="linkedin">
-          <p><a href="https://www.linkedin.com/">linkedin</a></p>
+        <div class="instagram-card grid-item">
+          <img src="./images/nodeIcon.png" height="80" width="100" alt="instagram">
+          <p>Node.js</p>
+        </div>
+
+        <div class="linkedin-card grid-item">
+          <img src="./images/reactIcon.png" height="70" width="100" alt="linkedin">
+          <p>React</p>
+        </div>
+
+        <div class="github-card grid-item">
+          <img src="./images/pythonICon.webp" height="70" width="80" alt="github">
+          <p>Python</p>
+        </div>
+
+        <div class="github-card grid-item">
+          <img src="./images/tailwindIcon.png" height="70" width="90" alt="github">
+          <p>Tailwind</p>
+        </div>
+
+        <div class="github-card grid-item">
+          <img src="./images/expressIcon.png" height="70" width="120" alt="github">
+          <p>Express.js</p>
         </div>
 
       </div>
     </section>
 
-    <section id="contacts">
+    <section id="contacts" class="contacts-container">
       <h2>contacts</h2>
-      <ul>
+
+      <ul class="contacts-list">
         <li>
-          <a href="https://gmail.com">gmail</a>
+          <p><a href="https://gmail.com">Gmail</a></p>
         </li>
         <li>
-          <p>phone +55 19 9999999</p>
+          <p><a href="https://github.com/HenriqueStocco">Github</a></p>
         </li>
         <li>
-          <p>brazil</p>
+          <p><a href="https://br.linkedin.com/">Linkedin</a></p>
+        </li>
+        <li>
+          <p>Phone +55 (19) 99769-7587 </p>
         </li>
       </ul>
     </section>
   </main>
 
-  <footer id="down">
+  <footer id="down" class="footer-container">
     <p>&copy;
       <a href="https://github.com/HenriqueStocco">Henrique Stocco</a>
     </p>
